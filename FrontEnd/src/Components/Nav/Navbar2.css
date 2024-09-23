@@ -1,0 +1,54 @@
+
+section{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 150px;
+    border-bottom: 2px solid rgb(213, 207, 207);
+}
+.lion{
+    display: flex;
+    
+}
+.lion h3{
+    padding-top: 60px;
+    font: bold;
+    
+}
+#lion{
+    width: 160px;
+}
+#logo{
+    width: 70px;
+    padding-top: 30px;
+}
+.going{
+     display: flex;
+     justify-content: space-around;
+     
+
+}
+button :hover{
+    background-color: #d44032;
+    transition: 0.7s;
+}
+#login{
+    padding: 5px;
+    border-style: none;
+    padding-right: 10px;
+    border-radius: 10px;
+    background: #fbef05;
+    margin-right: 5px;
+
+}
+#register{
+    border-style: none;
+    padding: 5px;
+    border-radius: 10px;
+    background: #fbef05;
+    margin-left: 5px;
+
+}
+#register:hover{
+    background:linear-gradient(135deg,yellow 20%,red );
+}

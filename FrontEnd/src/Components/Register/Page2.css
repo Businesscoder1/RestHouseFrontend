@@ -1,0 +1,232 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.information {
+  max-width: 80vw;
+  
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.information h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Flexbox layout for sections */
+.information section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+/* Individual field styles */
+.field {
+  flex: 1;
+  min-width: 45%;
+  margin-bottom: 1rem;
+  padding: 0 1%; /* Space between fields */
+}
+
+.field-error {
+  color: red;
+  font-size: 10px;
+}
+
+.full-width {
+  width: 100%; /* Full-width fields */
+}
+
+.half-width {
+  width: 48%; /* Equal-width fields */
+}
+
+/* Labels and inputs */
+.information label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.required {
+  color: red;
+}
+
+/* Input styles */
+
+#phone,#file,#days,#ESMnumber,#gender,#Lname,#Mname,#fname,#category{
+  width: 60vw;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+#phone,#days,#ESMnumber {
+  -moz-appearance: textfield;
+  appearance: number;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Button styles */
+#verify {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: auto;
+  margin: 1rem auto;
+}
+
+#verify:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown styles */
+#drop2 {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  color: #555;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Alert messages */
+.alert {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  color: white;
+}
+
+.alert.error {
+  background-color: #f44336;
+}
+
+.alert.success {
+  background-color: #4CAF50;
+}
+
+/* OTP input fields */
+.otpInput {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+#resend {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .information {
+    padding: 1.5rem;
+  }
+
+  .field {
+    min-width: 48%; /* Fields take up 48% of width */
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+
+  .half-width {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .information {
+    padding: 1rem;
+  }
+
+  .field {
+    min-width: 100%; /* Fields become full-width */
+  }
+
+  .otpInput {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  #verify {
+    width: 100%; /* Full-width button */
+  }
+}
+
+@media (max-width: 480px) {
+  .field {
+    min-width: 100%; /* Full-width fields */
+  }
+
+  .otpInput {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .information {
+    padding: 0.5rem;
+  }
+
+  #verify {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+/* Accessibility and further responsiveness */
+@media (max-width: 320px) {
+  .otpInput {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  #verify {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}

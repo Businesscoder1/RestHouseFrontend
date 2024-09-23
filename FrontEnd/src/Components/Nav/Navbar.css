@@ -1,0 +1,24 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    
+    font-size: 12px;
+    padding: 10px;
+    border-bottom: 2px rgb(153, 148, 148);
+    border-bottom-style:solid;
+
+}
+.sec{
+    padding-right: 200px;
+}
+nav a{
+    padding-left: 10px;
+    color: black;
+    
+}

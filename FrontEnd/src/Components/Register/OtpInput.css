@@ -1,0 +1,59 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.styleotp {
+    display: flex;
+    justify-content: center; /* Center the OTP inputs */
+    margin-right: 12%;
+    text-align: center;
+    gap: 10px; /* Space between OTP inputs */
+  }
+  
+  .otpInput {
+    width: 10vw; /* Width relative to viewport width */
+    height: 10vw; /* Height relative to viewport width */
+    max-width: 60px; /* Maximum width limit */
+    max-height: 60px; /* Maximum height limit */
+    margin: 1%;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    -moz-appearance: textfield;
+    appearance: number; /* Removes default number field appearance */
+  }
+  
+  /* Hover and focus effect */
+  .otpInput:hover, 
+  .otpInput:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Responsive adjustments for medium screens */
+  @media (max-width: 768px) {
+    .otpInput {
+      width: 12vw; /* Slightly larger for medium screens */
+      height: 12vw;
+      max-width: 50px; /* Adjust maximum size for this breakpoint */
+      max-height: 50px;
+    }
+  }
+  
+  /* Responsive adjustments for small screens */
+  @media (max-width: 480px) {
+    .otpInput {
+      width: 15vw; /* Larger scaling for small screens */
+      height: 15vw;
+      max-width: 40px; /* Maximum size */
+      max-height: 40px;
+    }
+  
+    .styleotp {
+      gap: 5px; /* Reduce space between inputs */
+    }
+  }
+  

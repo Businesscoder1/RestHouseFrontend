@@ -1,0 +1,25 @@
+.pageHead{
+    padding: 50px;
+    padding-left: 80px;
+    
+    font-family: Garamond, serif;
+    
+    width: screen;
+    
+}
+
+.logRegi{
+    font-size: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+#district{
+    padding-left: 80px;
+}
+#district{
+    width: 300px;
+
+}
